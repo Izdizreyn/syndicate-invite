@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>The Syndicate — Invitation</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rajdhani:wght@500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="fx" id="fx"></div>
+    <main class="card" id="card">
+      <svg
+        viewBox="0 0 1050 1300"
+        role="img"
+        aria-label="The Syndicate invitation"
+      >
+        <defs>
+          <pattern
+            id="hz"
+            width="18"
+            height="18"
+            patternUnits="userSpaceOnUse"
+            patternTransform="rotate(-45)"
+          >
+            <rect width="9" height="18" fill="#7a7a7a" />
+          </pattern>
+          <radialGradient id="bg" cx="50%" cy="28%" r="75%">
+            <stop offset="0" stop-color="#202022" />
+            <stop offset=".6" stop-color="#0e0e0f" />
+            <stop offset="1" stop-color="#060606" />
+          </radialGradient>
+          <radialGradient id="skull" cx="45%" cy="35%" r="70%">
+            <stop offset="0" stop-color="#8e8e8e" />
+            <stop offset=".6" stop-color="#4a4a4b" />
+            <stop offset="1" stop-color="#1c1c1d" />
+          </radialGradient>
+          <radialGradient id="wax" cx="40%" cy="35%">
+            <stop offset="0" stop-color="#d4242d" />
+            <stop offset=".6" stop-color="#8e0d14" />
+            <stop offset="1" stop-color="#560509" />
+          </radialGradient>
+          <filter id="noise">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency=".8"
+              numOctaves="2"
+              seed="3"
+            />
+            <feColorMatrix
+              values="0 0 0 0 .6  0 0 0 0 .6  0 0 0 0 .6  0 0 0 .09 0"
+            />
+          </filter>
+          <filter id="rough">
+            <feTurbulence baseFrequency=".05" numOctaves="2" seed="7" />
+            <feDisplacementMap in="SourceGraphic" scale="10" />
+          </filter>
+          <g id="tri" stroke="#9b9b9b" fill="none" stroke-linecap="round">
+            <path d="M525 205 V300" stroke-width="7" />
+            <path
+              d="M493 220 Q493 256 525 262 Q557 256 557 220"
+              stroke-width="6"
+            />
+            <path d="M493 220 V196 M557 220 V196" stroke-width="6" />
+            <path
+              d="M525 205 l-9 12 l9 -38 l9 38z M493 196 l-6 8 l6 -24 l6 24z M557 196 l-6 8 l6 -24 l6 24z"
+              fill="#9b9b9b"
+              stroke-width="2"
+            />
+          </g>
+        </defs>
+
+        <rect width="1050" height="1300" fill="url(#bg)" />
+        <rect width="1050" height="1300" filter="url(#noise)" />
+        <g fill="none" stroke="#2b2b2c" stroke-width="2">
+          <path d="M60 330 l40 60 l-10 50 l50 70" />
+          <path d="M900 600 l-50 40 l20 60 l-60 50" />
+          <path d="M120 900 l50 -30 l30 60" />
+          <path d="M820 1000 l-40 -40 l10 -50" />
+          <path d="M300 1010 l40 -20 l20 40" />
+        </g>
+
+        <g class="gray" id="gray">
+          <!-- double frame -->
+          <path
+            d="M30 14 H1020 L1036 30 V1270 L1020 1286 H30 L14 1270 V30Z"
+            fill="none"
+            stroke="#4d4d4e"
+            stroke-width="3"
+          />
+          <path
+            d="M46 34 H1004 L1016 46 V1254 L1004 1266 H46 L34 1254 V46Z"
+            fill="none"
+            stroke="#2f2f30"
+            stroke-width="2"
+          />
+          <g fill="url(#hz)">
+            <rect x="24" y="16" width="120" height="26" />
+            <rect x="890" y="16" width="130" height="26" />
+            <rect x="24" y="1258" width="120" height="26" />
+            <rect x="890" y="1258" width="130" height="26" />
+            <rect x="14" y="380" width="26" height="130" />
+            <rect x="1010" y="380" width="26" height="130" />
+            <rect x="14" y="1050" width="26" height="150" />
+            <rect x="1010" y="1050" width="26" height="150" />
+            <path d="M810 160 h205 l-14 28 h-205z" />
+          </g>
+          <g stroke="#6a6a6a" stroke-width="2">
+            <path d="M14 300 V380 M14 510 V600 M1036 300 V380 M1036 510 V600" />
+          </g>
+
+          <!-- header -->
+          <path d="M60 28 H350 M700 28 H980" stroke="#555" stroke-width="2" />
+          <text
+            class="os"
+            x="525"
+            y="36"
+            text-anchor="middle"
+            font-size="24"
+            style="letter-spacing: 12px"
+          >
+            THE SYNDICATE
+          </text>
+          <text
+            x="998"
+            y="116"
+            text-anchor="end"
+            font-size="21"
+            font-weight="600"
+            style="letter-spacing: 4px"
+          >
+            STRICTLY CONFIDENTIAL
+          </text>
+          <text
+            x="998"
+            y="141"
+            text-anchor="end"
+            font-size="21"
+            font-weight="600"
+            style="letter-spacing: 4px"
+          >
+            // EYES ONLY
+          </text>
+
+          <!-- target rings -->
+          <g fill="none" stroke="#262627" stroke-width="2">
+            <circle cx="525" cy="340" r="305" />
+            <circle cx="525" cy="340" r="205" />
+            <path d="M180 340 H870 M525 40 V640" />
+          </g>
+
+          <!-- emblem -->
+          <path
+            id="pSN"
+            d="M390.1 178.8 A330 330 0 0 1 659.9 178.8"
+            fill="none"
+          />
+          <path
+            id="pSOF"
+            d="M327.5 295.9 A270 270 0 0 1 406.6 237.3"
+            fill="none"
+          />
+          <path
+            id="pGRP"
+            d="M643.4 237.3 A270 270 0 0 1 722.5 295.9"
+            fill="none"
+          />
+          <g
+            stroke="#9b9b9b"
+            stroke-linejoin="round"
+            stroke-width="5"
+            fill="#1b1b1d"
+          >
+            <path
+              d="M294.8 257.7 A320 320 0 0 1 379.7 194.9 L408.8 251.9 A256 256 0 0 0 340.9 302.2Z"
+            />
+            <path
+              d="M294.8 257.7 A320 320 0 0 1 379.7 194.9 L408.8 251.9 A256 256 0 0 0 340.9 302.2Z"
+              transform="translate(1050 0) scale(-1 1)"
+            />
+            <path
+              d="M369.7 133.1 A380 380 0 0 1 680.3 133.1 L654.2 191.5 A316 316 0 0 0 395.8 191.5Z"
+            />
+          </g>
+          <g fill="none" stroke="#9b9b9b" stroke-width="2" opacity=".55">
+            <path d="M401.8 182.5 A322 322 0 0 1 648.2 182.5" />
+            <path d="M381.9 134.5 A374 374 0 0 1 668.1 134.5" />
+            <path d="M339.7 294.7 A262 262 0 0 1 402 248.7" />
+            <path d="M303 258 A314 314 0 0 1 377.6 202.8" />
+            <g transform="translate(1050 0) scale(-1 1)">
+              <path d="M339.7 294.7 A262 262 0 0 1 402 248.7" />
+              <path d="M303 258 A314 314 0 0 1 377.6 202.8" />
+            </g>
+          </g>
+          <text
+            class="os"
+            font-size="46"
+            font-weight="700"
+            style="letter-spacing: 5px; fill: #c4c4c4"
+          >
+            <textPath href="#pSN" startOffset="50%" text-anchor="middle">
+              SNDKT
+            </textPath>
+          </text>
+          <text
+            class="os"
+            font-size="40"
+            font-weight="700"
+            style="letter-spacing: 4px"
+          >
+            <textPath href="#pSOF" startOffset="50%" text-anchor="middle">
+              SOF
+            </textPath>
+          </text>
+          <text
+            class="os"
+            font-size="40"
+            font-weight="700"
+            style="letter-spacing: 4px"
+          >
+            <textPath href="#pGRP" startOffset="50%" text-anchor="middle">
+              GRP
+            </textPath>
+          </text>
+
+          <path
+            id="ah"
+            d="M525 180 L652 415 C658 435 644 443 606 452 C582 458 576 468 580 486 C584 506 556 516 525 516 C494 516 466 506 470 486 C474 468 468 458 444 452 C406 443 392 435 398 415Z"
+            fill="#111112"
+            stroke="#9b9b9b"
+            stroke-width="8"
+            stroke-linejoin="round"
+          />
+          <use
+            href="#ah"
+            fill="none"
+            stroke="#3a3a3b"
+            stroke-width="2"
+            transform="translate(525 370) scale(.94) translate(-525 -370)"
+          />
+          <!-- trident -->
+          <g
+            stroke="#9b9b9b"
+            fill="none"
+            stroke-linecap="round"
+            stroke-width="6"
+          >
+            <path d="M525 214 V305" />
+            <path d="M505 236 V266 Q505 284 525 286 Q545 284 545 266 V236" />
+          </g>
+          <path
+            d="M525 198 L519 216 H531Z M505 226 L500 240 H510Z M545 226 L540 240 H550Z"
+            fill="#9b9b9b"
+          />
+          <!-- crossed arrows -->
+          <g stroke="#9b9b9b" stroke-width="5" stroke-linecap="round">
+            <path d="M602 398 L486 313" />
+            <path d="M448 398 L564 313" />
+          </g>
+          <path
+            d="M470 305 L488.700 309.700 L480.700 321.100Z M580 305 L561.300 309.700 L569.300 321.100Z"
+            fill="#9b9b9b"
+          />
+          <g stroke="#9b9b9b" stroke-width="3" stroke-linecap="round">
+            <path
+              d="M602 398 l12 -3 M602 398 l3 11 M593 392 l12 -3 M593 392 l3 11"
+            />
+            <path
+              d="M448 398 l-12 -3 M448 398 l-3 11 M457 392 l-12 -3 M457 392 l-3 11"
+            />
+          </g>
+          <!-- skull -->
+          <g transform="translate(525 352) scale(.78) translate(-525 -359)">
+            <path
+              d="M525 296 C480 296 464 332 470 362 C472 374 480 382 488 388 L490 408 C491 418 500 422 510 422 H540 C550 422 559 418 560 408 L562 388 C570 382 578 374 580 362 C586 332 570 296 525 296Z"
+              fill="url(#skull)"
+              stroke="#bdbdbd"
+              stroke-width="3"
+            />
+            <g
+              fill="none"
+              stroke="#202021"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M508 299 l9 16 l-8 10 l10 14" />
+              <path d="M566 318 l-9 10 l6 8" />
+              <path d="M482 330 q4 10 2 20" />
+              <path d="M491 388 q16 8 34 4 q18 4 34 -4" />
+              <path d="M500 312 q-14 8 -20 28" />
+            </g>
+            <path
+              d="M486 338 Q504 328 520 344 Q520 372 502 374 Q482 366 486 338Z"
+              fill="#050505"
+            />
+            <path
+              d="M564 338 Q546 328 530 344 Q530 372 548 374 Q568 366 564 338Z"
+              fill="#050505"
+            />
+            <path
+              d="M492 345 q8 -8 16 0 M558 345 q-8 -8 -16 0"
+              stroke="#3c3c3d"
+              stroke-width="2"
+              fill="none"
+            />
+            <path d="M525 366 L515 390 Q525 386 535 390Z" fill="#050505" />
+            <path
+              d="M498 400 H552 V420 H498Z"
+              fill="#6b6b6c"
+              stroke="#202021"
+              stroke-width="2"
+            />
+            <path
+              d="M507 400 V420 M516 400 V420 M525 400 V420 M534 400 V420 M543 400 V420 M498 410 H552"
+              stroke="#202021"
+              stroke-width="2"
+            />
+          </g>
+          <path
+            d="M525 410 V452"
+            stroke="#9b9b9b"
+            stroke-width="8"
+            stroke-linecap="round"
+          />
+          <path
+            d="M510 415 H540"
+            stroke="#9b9b9b"
+            stroke-width="5"
+            stroke-linecap="round"
+          />
+          <text
+            class="os"
+            x="525"
+            y="492"
+            text-anchor="middle"
+            font-size="21"
+            font-weight="500"
+            style="letter-spacing: 2px"
+          >
+            MMXXVI
+          </text>
+
+          <!-- INVITATION -->
+          <path
+            d="M40 570 H205 M845 570 H1010"
+            stroke="#666"
+            stroke-width="2"
+          />
+          <text
+            class="os"
+            x="538"
+            y="586"
+            text-anchor="middle"
+            font-size="60"
+            font-weight="700"
+            style="letter-spacing: 30px; fill: #8d8d8d"
+          >
+            INVITATION
+          </text>
+          <path d="M205 606 H845" stroke="#444" stroke-width="2" />
+          <g
+            font-size="28"
+            font-weight="500"
+            text-anchor="middle"
+            style="letter-spacing: 3px"
+          >
+            <text x="525" y="643">Some doors are never meant to be found.</text>
+            <text x="525" y="674">
+              Some invitations are never meant to be spoken.
+            </text>
+            <text x="525" y="733">
+              You have been discreetly identified for consideration by
+            </text>
+          </g>
+          <text
+            class="os"
+            x="525"
+            y="778"
+            text-anchor="middle"
+            font-size="38"
+            font-weight="700"
+            style="letter-spacing: 12px; fill: #bcbcbc"
+          >
+            THE SYNDICATE.
+          </text>
+          <path d="M170 800 H880" stroke="#555" stroke-width="2" />
+          <g
+            font-size="28"
+            font-weight="500"
+            text-anchor="middle"
+            style="letter-spacing: 3px"
+          >
+            <text x="525" y="840">
+              Your admission is subject to the judgment of its members.
+            </text>
+            <text x="525" y="871">
+              No explanations. No obligations. No second invitations.
+            </text>
+          </g>
+          <path d="M82 936 H228 M822 936 H968" stroke="#666" stroke-width="2" />
+          <g
+            class="os"
+            font-size="34"
+            font-weight="500"
+            text-anchor="middle"
+            style="letter-spacing: 10px; fill: #8d8d8d"
+          >
+            <text x="530" y="942">BELIEVE IT OR DISMISS IT.</text>
+            <text x="530" y="980">THE CHOICE IS YOURS.</text>
+          </g>
+
+          <!-- footer -->
+          <path
+            d="M90 1175 H190 M860 1175 H900"
+            stroke="#555"
+            stroke-width="2"
+          />
+          <text
+            class="os"
+            x="525"
+            y="1184"
+            text-anchor="middle"
+            font-size="24"
+            style="letter-spacing: 7px"
+          >
+            WHAT IS KNOWN MUST REMAIN UNKNOWN.
+          </text>
+        </g>
+
+        <!-- link (own animation) -->
+        <a
+          id="link"
+          href="https://discord.gg/3fbsU94fsz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <path
+            class="lb"
+            d="M150 1010 H900 L916 1026 V1108 L900 1124 H150 L134 1108 V1026Z"
+            fill="#0b0b0c"
+            stroke="#8a8a8a"
+            stroke-width="3"
+          />
+          <path
+            d="M158 1020 H892 L906 1032 V1102 L892 1114 H158 L144 1102 V1032Z"
+            fill="none"
+            stroke="#444"
+            stroke-width="2"
+          />
+          <g fill="#d2d2d2" transform="translate(194 1042) scale(1.25)">
+            <path
+              d="M52 6a46 46 0 0 0-11-3l-1 2.400a42 42 0 0 0-16 0L23 3A46 46 0 0 0 12 6C5 17 3 28 4 38a46 46 0 0 0 14 7l3-5a30 30 0 0 1-5-2.500l1-1a33 33 0 0 0 30 0l1 1a30 30 0 0 1-5 2.500l3 5a46 46 0 0 0 14-7c1-11-1-22-8-32zM23 32c-3 0-5-3-5-6s2-6 5-6 5 3 5 6-2 6-5 6zm18 0c-3 0-5-3-5-6s2-6 5-6 5 3 5 6-2 6-5 6z"
+              fill-rule="evenodd"
+            />
+          </g>
+          <path d="M304 1028 V1106" stroke="#777" stroke-width="3" />
+          <text
+            id="linkText"
+            x="335"
+            y="1082"
+            font-size="43"
+            font-weight="700"
+            style="fill: #e8e8e8; letter-spacing: 1px"
+          >
+            https://discord.gg/3fbsU94fsz
+          </text>
+        </a>
+
+        <!-- TOP SECRET -->
+        <g id="secret" transform="rotate(-8 188 116)">
+          <rect
+            x="48"
+            y="60"
+            width="280"
+            height="112"
+            rx="8"
+            fill="#2a0508"
+            fill-opacity=".35"
+            stroke="#b3121a"
+            stroke-width="7"
+          />
+          <rect
+            x="61"
+            y="73"
+            width="254"
+            height="86"
+            rx="4"
+            fill="none"
+            stroke="#b3121a"
+            stroke-width="2"
+          />
+          <text
+            class="os"
+            x="188"
+            y="132"
+            text-anchor="middle"
+            font-size="42"
+            font-weight="700"
+            textLength="214"
+            lengthAdjust="spacingAndGlyphs"
+            style="fill: #b3121a"
+          >
+            TOP SECRET
+          </text>
+        </g>
+
+        <!-- seal -->
+        <g id="seal">
+          <circle
+            cx="962"
+            cy="1200"
+            r="70"
+            fill="url(#wax)"
+            filter="url(#rough)"
+          />
+          <circle
+            cx="962"
+            cy="1200"
+            r="52"
+            fill="none"
+            stroke="#4a050a"
+            stroke-width="4"
+          />
+          <g
+            stroke="#4a050a"
+            stroke-width="6"
+            stroke-linecap="round"
+            fill="none"
+          >
+            <path
+              d="M962 1162 V1238 M942 1178 Q962 1208 982 1178 M942 1178 V1164 M982 1178 V1164"
+            />
+          </g>
+          <path
+            d="M962 1156 l-6 12 h12z M942 1160 l-4 11 h8z M982 1160 l-4 11 h8z"
+            fill="#4a050a"
+          />
+        </g>
+      </svg>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
