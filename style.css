@@ -1,16 +1,84 @@
-:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-*{box-sizing:border-box}
-body{margin:0;background:#030303;min-height:100vh;display:flex;justify-content:center;align-items:center;overflow-x:hidden}
-.card{position:relative;width:min(620px,100%);margin:10px}
-svg{display:block;width:100%;height:auto}
-text{font-family:Rajdhani,'Segoe UI',sans-serif;fill:#9b9b9b}
-.os{font-family:Oswald,Impact,sans-serif}
-.gray{opacity:0;transform-origin:525px 650px}
-#link{opacity:0;pointer-events:none}
-#link.live{pointer-events:auto;cursor:pointer}
-#link.live:hover .lb{stroke:#fff;filter:drop-shadow(0 0 10px #ffffff55)}
-#secret,#seal{opacity:0;transform-box:fill-box;transform-origin:center}
-.fx{position:fixed;inset:0;pointer-events:none;z-index:9;overflow:hidden}
-.puff{position:absolute;border-radius:50%;background:radial-gradient(circle,#d0d0d066,#8887 40%,transparent 70%);filter:blur(7px)}
-@media(prefers-reduced-motion:reduce){.gray,#link,#secret,#seal{opacity:1!important}#link{pointer-events:auto}}
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  color-scheme: dark;
+}
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #030303;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.card {
+  position: relative;
+  width: min(620px, 100%);
+  margin: 10px;
+}
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+text {
+  font-family: Rajdhani, "Segoe UI", sans-serif;
+  fill: #9b9b9b;
+}
+.os {
+  font-family: Oswald, Impact, sans-serif;
+}
+.gray {
+  opacity: 0;
+  transform-origin: 525px 650px;
+}
+#link {
+  opacity: 0;
+  pointer-events: none;
+}
+#link.live {
+  pointer-events: auto;
+  cursor: pointer;
+}
+#link.live:hover .lb {
+  stroke: #fff;
+  filter: drop-shadow(0 0 10px #ffffff55);
+}
+#secret,
+#seal {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.fx {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9;
+  overflow: hidden;
+}
+.puff {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #d0d0d066, #8887 40%, transparent 70%);
+  filter: blur(7px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .gray,
+  #link,
+  #secret,
+  #seal {
+    opacity: 1 !important;
+  }
+  #link {
+    pointer-events: auto;
+  }
+}
