@@ -1,5 +1,5 @@
 // Swap this when the Discord invite is regenerated
-const INVITE_URL = "https://discord.gg/3fbsU94fsz";
+const INVITE_URL = "https://discord.gg/25WjHmh7ZU";
 const $ = (id) => document.getElementById(id);
 $("link").setAttribute("href", INVITE_URL);
 $("linkText").textContent = INVITE_URL;
